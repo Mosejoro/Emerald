@@ -373,4 +373,70 @@ main{
   color: white;
   transform: rotateY(180deg);
 }
+.flip-card a{
+  padding: 4px;
+  text-decoration: none;
+  background-color: orangered;
+  color: white;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.flip-card  a:hover{
+  color: orangered;
+  background-color: white;
+}
+/* Miles */
+.Dard {
+  width: 300px;
+  height: 350px;
+  perspective: 1000px;
+}
+
+.Dard-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.Dard:hover .Dard-inner {
+  transform: rotateY(-180deg);
+}
+
+.Dard-front,
+.Dard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.Dard-front {
+  background-color: #6A2C70;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 10px solid #6A2C70;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
+}
+
+.Dard-back {
+  background-color: #F08A5D;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 10px solid #F08A5D;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+}
+
+/* Miles */
 /* Card for Pdf */
