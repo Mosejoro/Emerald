@@ -30,7 +30,7 @@ const pdfData = [
       // Check if search term exists in name or summary
       if (pdfName.includes(searchTerm) || summary.includes(searchTerm)) {
         resultsFound = true;
-        resultsDiv.innerHTML += `<p><b>${pdf.name}</b></p>`;
+        resultsDiv.innerHTML += `<li><b>${pdf.name}</b></li>`;
       }
     });
   

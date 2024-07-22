@@ -1,22 +1,28 @@
 .B{
-    text-decoration: none;
     color: white;
     font-size: 20px;
-}.B{
-    width: 90%;
+}
+.B:hover{
+  color: blueviolet;
+}
+.L img{
+  width: 4rem;
+}
+.N img{
+  width: 2rem;
 }
 
 /* See Oh */
 main{
-    margin-top: 10rem;
-    height: 100vh;
+  position: static;
+    height: 100vh; 
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 .parent {
-    width: 290px;
-    height: 300px;
+    width: 320px;
+    height: 380px;
     perspective: 1000px;
 
   }
@@ -60,7 +66,7 @@ main{
   .content .text {
     display: block;
     color: rgba(0, 137, 78, 0.7647058824);
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 20px;
   }
   
