@@ -5,6 +5,7 @@ const pdfData = [
     { "name": "Kind", "summary": "Greeting Message" },
     { "name": "Life", "summary": "Greeting Message" },
     { "name": "Swim", "summary": "Greeting Message" },
+    { "name": "Peace by Joyce Meyer", "summary": "Joyce" },
     { "name": "Hope", "summary": "Greeting Message" },
     
     // ... (your other PDFs)
@@ -45,7 +46,7 @@ if (resultsFound) {
       const summary = pdf.summary.toLowerCase();
       if (pdfName.includes(searchTerm) || summary.includes(searchTerm)) {
         // Create download link with PDF name and path
-        const downloadLink = `<a href="Pdfs/${pdf.name}.pdf" target="_blank"><b>${pdf.name}</b></a>`;
+        const downloadLink = `<a class="B" href="Pdfs/${pdf.name}.pdf" target="_blank"><b>${pdf.name}</b></a>`;
         resultsDiv.innerHTML += downloadLink + '<br>'; // Add line break after each link
       }
     });
@@ -55,3 +56,6 @@ if (resultsFound) {
   
 
 });
+
+// For Small ones
+// For Small ones
