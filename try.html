@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                font-family: jost;
+            }
+            body{
+                height: 80vh;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                background-image: url(Pdimg/Girl.png);
+                background-color:#914F1E ;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: right ;
+            }
+            @font-face {
+                font-family: Jost;
+                src: url(Pdimg/Jost-400-Book.ttf);
+            }
+           
+            .login-box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 390px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: #DEAC80;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input,textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #bdb8b8;
+  font-size: 12px;
+}
+
+.login-box form button {
+  position: relative;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box button:hover {
+  background: #B5C18E;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #B5C18E,
+              0 0 25px #B5C18E,
+              0 0 50px #B5C18E,
+              0 0 100px #B5C18E;
+}
+
+.login-box button span {
+  position: absolute;
+  display: block;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box button span:nth-child(1) {
+  bottom: 2px;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #B5C18E);
+  animation: btn-anim1 2s linear infinite;
+}
+h1{
+    color: wheat;
+  font-size: 40px;
+  text-align: center;
+}
+a{
+    padding: 7px;
+    text-decoration: none;
+    color: white;
+    background-color: #bdb8b8;
+    position:absolute;
+    top:40px;
+    font-size: 20px;
+    border-radius: 25px;
+    transition: background .9s ease-in;
+}
+a:hover{
+    background-color: white;
+    color: #bdb8b8;
+}
+@media (max-width: 576px) {
+    body{
+        background-size: 40%;
+        background-position-x: right;
+        background-position-y: top;
+    }
+    .login-box{
+        width: 80vw;
+    }
+    h1{
+        font-size: 20px;
+    }
+    a{
+        top: 90px;
+        font-size: 15px;
+    }
+ }
+        </style>
+    </head>
+    <body>
+        <h1>Send us a Mail on the Books you would like to get!</h1>
+        <a href="index.html">&#x25c2;Back</a>
+      <div class="login-box">
+       
+          <form target="_blank" action="https://formsubmit.co/442a6e70c8d6f49c8d8a7c619b1ebf79" method="POST">
+            <div class="user-box">
+              <input  type="text" name="name" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="user-box">
+              <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+            </div><center>
+                <div class="form-group">
+                    <textarea placeholder="Books that you Need" class="form-control" name="message" rows="2" required></textarea>
+                  </div>
+            <button type="submit" href="#">
+                   SEND
+               <span></span>
+            </button></center>
+          </form>
+        </div>
+    
+  </body>
+  </html>
