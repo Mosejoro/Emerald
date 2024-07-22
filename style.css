@@ -11,14 +11,18 @@
 .N img{
   width: 2rem;
 }
-
+aside{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.G{
+  width: 40rem;
+}
 /* See Oh */
-main{
-  position: static;
-    height: 100vh; 
+main{ 
     justify-content: center;
     align-items: center;
-    gap: 20px;
 }
 .parent {
     width: 320px;
