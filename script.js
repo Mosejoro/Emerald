@@ -1,12 +1,18 @@
 // Load your JSON data (replace with your actual data loading logic)
   const pdfData = [
-      { "name": "Meet Me", "summary": "Meeting Invitation" },
-      { "name": "Hello", "summary": "What" },
-      { "name": "Kind", "summary": "Greeting Message" },
-      { "name": "Life", "summary": "Greeting Message" },
-      { "name": "Swim", "summary": "Greeting Message" },
+      { "name": "Battlefield", "summary": "Meeting Invitation" },
+      { "name": "Believer's Authority", "summary": "What" },
+      { "name": "Confident Woman", "summary": "Greeting Message" },
+      { "name": "Faith work by Love", "summary": "Greeting Message" },
+      { "name": "Healing Scriptures", "summary": "Greeting Message" },
       { "name": "Peace by Joyce Meyer", "summary": "Meyer" },
-      { "name": "Hope", "summary": "Greeting Message" },
+      { "name": "How you can be led", "summary": "Greeting Message" },
+      { "name": "Living Beyond Feelings", "summary": "Greeting Message" },
+      { "name": "Power of Vision", "summary": "Greeting Message" },
+      { "name": "Power Thought", "summary": "Greeting Message" },
+      { "name": "Purpose and Power of Love", "summary": "Greeting Message" },
+      { "name": "Rediscovering the Kingdom", "summary": "Greeting Message" },
+      { "name": "Understanding  the Purpose and Power of Prayer", "summary": "Greeting Message" },
       
     // ... (your other PDFs)
   ];
@@ -30,7 +36,7 @@
       // Check if search term exists in name or summary
       if (pdfName.includes(searchTerm) || summary.includes(searchTerm)) {
         resultsFound = true;
-        resultsDiv.innerHTML += `<li><b>${pdf.name}</b></li>`;
+        resultsDiv.innerHTML += `<b>${pdf.name}</b>`;
       }
     });
   
