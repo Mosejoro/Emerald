@@ -90,6 +90,9 @@ main{
     border-radius: 50px;
     background: linear-gradient(135deg, rgb(0, 255, 214) 0%, rgb(8, 226, 96) 100%);
     transition: all 0.5s ease-in-out;
+    background-image: url(Assest/image\ \(2\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
     transform-style: preserve-3d;
     box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;
   }
@@ -110,7 +113,7 @@ main{
   }
   
   .content {
-    padding: 100px 60px 0px 30px;
+    padding: 172px 60px 0px 30px;
     transform: translate3d(0, 0, 26px);
   }
   
@@ -441,6 +444,6 @@ main{
 /* Miles */
 /* Card for Pdf */
 #About{
-  height: 90vh;
+  height: 100vh;
   background-color:#F6FB7A;
 }
